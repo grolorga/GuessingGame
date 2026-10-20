@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="resultViewModel"
+            type="com.example.guessinggame.ResultViewModel" />
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/result_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@{resultViewModel.won ? @string/result_won : @string/result_lost}"
+        android:textAppearance="?attr/textAppearanceHeadline3"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/result_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@{@string/result_word(resultViewModel.word)}"
+        android:textAppearance="?attr/textAppearanceHeadline5" />
+
+    <TextView
+        android:id="@+id/result_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@{@string/result_details(resultViewModel.wrongGuesses, resultViewModel.maximumWrongGuesses)}"
+        android:textAppearance="?attr/textAppearanceBody1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/play_again_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/play_again" />
+</LinearLayout>
+</layout>

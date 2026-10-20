@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Угадай слово</string>
+    <string name="game_title">Угадай слово</string>
+    <string name="game_subtitle">Угадайте секретное слово по буквам</string>
+    <string name="letter_hint">Буква</string>
+    <string name="make_guess">Назвать букву</string>
+    <string name="finish_game">Завершить игру</string>
+    <string name="lives_left">Осталось жизней: %1$d</string>
+    <string name="incorrect_guesses">Ошибочные буквы: %1$s</string>
+    <string name="empty_letter_error">Введите букву</string>
+    <string name="single_letter_error">Нужна ровно одна буква</string>
+    <string name="duplicate_letter_error">Эту букву вы уже называли</string>
+    <string name="result_won">Победа!</string>
+    <string name="result_lost">Игра окончена</string>
+    <string name="result_word">Секретное слово: %1$s</string>
+    <string name="result_details">Ошибок: %1$d из %2$d</string>
+    <string name="play_again">Сыграть ещё раз</string>
+</resources>
